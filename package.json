@@ -1,6 +1,5 @@
 {
   "name": "blog",
-  "homepage": "https://blog.villasanti.ar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
