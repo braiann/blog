@@ -13,7 +13,7 @@ function App() {
       <div className="font-sans bg-slate-50 text-slate-700 py-28 h-screen">
         <AuthProvider>
           <Navbar />
-          <Routes>
+          <Routes>            
             <Route path="/" element={<Articles />}/>
             <Route path="/article/:slug" element={<Article />}/>
             <Route path="/login" element={<Login />} />
