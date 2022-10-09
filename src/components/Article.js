@@ -54,12 +54,14 @@ function Article() {
                             {post && post.title}
                         </h1>
                     </div>
-                    <p className="text-slate-500 mb-5 text-lg">{post.lede}</p>
+                    <p className="text-slate-500 text-lg">{post.lede}</p>
                     {post.body.split('\\n').map((paragraph, index) =>
                         <p className="mb-5" key={index}>
                             {paragraph}
                         </p>
                     )}
+                    <p className="text-right mb-3 text-slate-400 text-xs">Published on {post.createdAt.toDate().toLocaleDateString()}.</p>
+                    <p className="text-right text-slate-400 text-xs">{post.updatedAt && `Updated on ${post.updatedAt.toDate().toLocaleDateString()}.`}</p>
                 </>
             :
                 <>
