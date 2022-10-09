@@ -1,7 +1,7 @@
 import Navbar from "./Navbar"
 import Articles from "./Articles"
 import Article from "./Article"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import Login from "./Login"
 import { AuthProvider } from "../context/authContext"
 import NewPost from "./NewPost"
@@ -9,7 +9,7 @@ import PageNotFound from "./PageNotFound"
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="font-sans bg-slate-50 text-slate-700 py-28 h-screen">
         <AuthProvider>
           <Navbar />
@@ -24,7 +24,7 @@ function App() {
           <footer className="h-24"></footer>
         </AuthProvider>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
