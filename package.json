@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "homepage": "https://braiann.github.io/blog",
+  "homepage": "https://braiann.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
